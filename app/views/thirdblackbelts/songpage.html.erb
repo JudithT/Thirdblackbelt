@@ -1,0 +1,14 @@
+<a href="/logout">logout</a><br>
+<a href="/songs">Dashboard</a>
+
+
+<h2>Others who added <%=@song.artist%>-<%=@song.title%> </h2>
+
+
+
+
+          <% @users.each do |user| %>
+
+             <%=user.firstname%>
+
+          <%end%>

@@ -1,0 +1,20 @@
+<a href="/logout">logout</a><br>
+<a href="/songs">Dashboard</a>
+
+
+
+<table>
+  <tr>
+    <th> Artist</th>
+    <th>Title</th>
+    <th> Times added</th>
+
+  </tr>
+  <% @mysongs.each do |song| %>
+    <tr>
+      <td><%=song.artist%></td>
+      <td><%=song.title%></td>
+      <td><%=song.adds.count%></td>
+    </tr>
+  <%end%>
+</table>
